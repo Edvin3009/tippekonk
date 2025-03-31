@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tippekonkurranse</title>
+    <style>
+        table { border-collapse: collapse; width: 50%; }
+        th, td { border: 1px solid black; padding: 10px; text-align: center; }
+    </style>
+    <script>
+        async function fetchLeagueData() {
+            let response = await fetch("/league-data");
+            let data = await response.json();
+            let table = document.getElementById("league");
+            table.innerHTML = "<tr><th>Team</th><th>Points</th></tr>";
+            data.forEach(team => {
+                table.innerHTML += `<tr><td>${team.team}</td><td>${team.points}</td></tr>`;
+            });
+        }
+        window.onload = fetchLeagueData;
+    </script>
+</head>
+<body>
+    <h1>Tabellen</h1>
+    <table id="league"></table>
+    <button onclick=fetchLeagueData()>Oppdater tabell</button>
+</body>
+</html>
