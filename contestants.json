@@ -1,0 +1,36 @@
+{
+  "contestants": [
+    {
+      "name": "Edvin",
+      "guess": ["Lillestrøm", "Stabæk", "Aalesund", "Odd", "Lyn", "Kongsvinger", "Start", "Ranheim", "Moss", "Sogndal", "Hødd", "Raufoss", "Egersund", "Åsane", "Mjøndalen", "Skeid"]
+    },
+    {
+      "name": "Peter",
+      "guess": ["Stabæk", "Lillestrøm", "Aalesund", "Moss", "Odd", "Lyn", "Kongsvinger", "Start", "Sogndal", "Egersund", "Raufoss", "Mjøndalen", "Ranheim", "Skeid", "Åsane", "Hødd"]
+    },
+    {
+      "name": "Torvald",
+      "guess": ["Stabæk", "Moss", "Lillestrøm", "Lyn", "Start", "Egersund", "Ålesund", "Ranheim", "Kongsvinger", "Raufoss", "Odd", "Mjøndalen", "Åsane", "Skeid", "Sogndal", "Hødd"]
+    },
+    {
+      "name": "Morten",
+      "guess": ["Stabæk", "Odd", "Lillestrøm", "Aalesund", "Lyn", "Kongsvinger", "Moss", "Start", "Ranheim", "Egersund", "Sogndal", "Skeid", "Raufoss", "Åsane", "Hødd", "Mjøndalen"]
+    },
+    {
+      "name": "Carina",
+      "guess": ["Moss", "Stabæk", "Start", "Aalesund", "Ranheim", "Kongsvinger", "Lyn", "Skeid", "Odd", "Lillestrøm", "Sogndal", "Mjøndalen", "Egersund", "Raufoss", "Hødd", "Åsane"]
+    },
+    {
+      "name": "Frode",
+      "guess": ["Lyn", "Moss", "Stabæk", "Lillestrøm", "Odd", "Aalesund", "Egersund", "Start", "Kongsvinger", "Sogndal", "Mjøndalen", "Skeid", "Ranheim", "Åsane", "Raufoss", "Hødd"]
+    },
+    {
+      "name": "VG",
+      "guess": ["Lillestrøm", "Aalesund", "Odd", "Kongsvinger", "Egersund", "Lyn", "Stabæk", "Moss", "Start", "Ranheim", "Raufoss", "Åsane", "Sogndal", "Hødd", "Skeid", "Mjøndalen"]
+    },
+    {
+      "name": "ChatGPT",
+      "guess": ["Lillestrøm", "Aalesund", "Odd", "Kongsvinger", "Stabæk", "Moss", "Lyn", "Start", "Ranheim", "Sogndal", "Egersund", "Raufoss", "Åsane", "Mjøndalen", "Skeid", "Hødd"]
+    }
+  ]
+}
