@@ -24,7 +24,6 @@
             const container = document.getElementById("contestants-list");
 
             data.contestants.forEach((contestant, i) => {
-                console.log(`contestant${i}`);
                 let table = document.createElement("table");
                 // table.id = `contestant${i}`;
 
@@ -32,11 +31,17 @@
                 headerRow.innerHTML = `<th>${contestant.name}</th>`;
                 table.appendChild(headerRow);
 
-                contestant.guess.forEach(team => {
+                let points = 0;
+
+                contestant.guess.forEach((team, i) => {
                     let row = document.createElement("tr");
+                    points += contestant.points[i];
                     row.innerHTML = `<tr><td>${team}</td></tr>`;
                     table.appendChild(row);
                 });
+                let row = document.createElement("tr");
+                row.innerHTML = `<tr><th>${100 - points} poeng</th></tr>`;
+                table.appendChild(row);
 
                 container.appendChild(table);
             });
