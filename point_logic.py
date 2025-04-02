@@ -24,7 +24,7 @@ for guess in guesses:
     contestants['contestants'][i]['points'] = []
     j = 1
     for team in guess:
-        contestants['contestants'][i]['points'].append(abs(j - table[guess[j-1]]))
+        contestants['contestants'][i]['points'].append(j - table[guess[j-1]])
         j += 1
     i += 1
 
