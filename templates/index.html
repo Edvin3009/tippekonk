@@ -11,9 +11,9 @@
             let response = await fetch("/league-data");
             let data = await response.json();
             let table = document.getElementById("league");
-            table.innerHTML = "<tr><th>Team</th><th>Points</th></tr>";
+            table.innerHTML = "<tr><th>Lag</th><th>Spilt</th><th>Målforskjell</th><th>Poeng</th></tr>";
             data.forEach(team => {
-                table.innerHTML += `<tr><td>${team.team}</td><td>${team.points}</td></tr>`;
+                table.innerHTML += `<tr><td>${team.team}</td><td style="width:5%;">${team.played}</td><td style="width:5%;">${team.goals_for} - ${team.goals_against}</td><td style="width:5%; font-weight: bold;">${team.points}</td></tr>`;
             });
         }
 
@@ -40,6 +40,7 @@
                     let sign = 0;
                     if (p == 0) {
                          sign = 9733;
+                         points -= 1;
                     } else if (p > 0) {
                          sign = 8593;
                     } else {
